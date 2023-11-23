@@ -1,0 +1,4 @@
+UtilityLibrary är ett användbart bibliotek med metoder som är utformade för att
+ enkelt och pålitligt hantera inmatningar i olika C#-projekt.
+ Det erbjuder en samling funktioner för att få indata från användare på ett säkert och bekvämt sätt, 
+ vilket minimerar risken för felaktiga eller ogiltiga inmatningar.
