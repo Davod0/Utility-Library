@@ -102,4 +102,45 @@ public class Library
         }
     }
 
+
+
+
+    public static string SafeReadFile(string message)
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine(message);
+            var filePath = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(filePath))
+            {
+                if (File.Exists(filePath))
+                {
+                    return File.ReadAllText(filePath);
+                }
+                else
+                {
+                    Console.WriteLine("Filen hittades inte! Ange sök adressen utan citationstecken (\" \") ");
+                    Console.ReadKey();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ogiltig inmatning!");
+                Console.WriteLine("Vill du försöka igen! Ja/Nej");
+                string userChoice = Console.ReadLine();
+                if (userChoice == "Nej" || userChoice == "nej")
+                {
+                    return null;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
 }
