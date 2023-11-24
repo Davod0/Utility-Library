@@ -1,6 +1,6 @@
 ﻿namespace UtilityLibrary;
 
-public class UtilityLibrary
+public class Library
 {
 
 
