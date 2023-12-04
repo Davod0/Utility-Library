@@ -2,3 +2,18 @@ UtilityLibrary är ett användbart bibliotek med metoder som är utformade för 
  enkelt och pålitligt hantera inmatningar i olika C#-projekt.
  Det erbjuder en samling funktioner för att få indata från användare på ett säkert och bekvämt sätt, 
  vilket minimerar risken för felaktiga eller ogiltiga inmatningar.
+
+
+
+__________________________________________________________________________________________________________________
+
+Metoden SafeReadFile() är utformad för att hantera läsning av länkar eller adresser till filer/mappar av typen 
+textfiler(.txt) dess huvudsakliga syfte är att visa innehållet i den angivna mappen på skärmen. 
+Metoden genomför en sökning och kontrollerar om den specificerade filen existerar på enheten. 
+Om filen inte hittas presenteras meddelandet "Filen hittades inte" på skärmen
+
+__________________________________________________________________________________________________________________
+Metoden ReadFileContents() är utformad för att hantera läsning av länkar eller adresser till filer/mappar av typen 
+textfiler(.txt) dess huvudsakliga syfte är att visa innehållet i den angivna mappen på skärmen. 
+Metoden genomför en sökning och kontrollerar om den specificerade filen existerar på enheten. 
+Om filen inte hittas presenteras meddelandet "Filen hittades inte" på skärmen.

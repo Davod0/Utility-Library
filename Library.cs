@@ -138,6 +138,40 @@ public class Library
     }
 
 
+    public static string ReadFileContents(string message)
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine(message);
+            var filePath = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(filePath))
+            {
+                if (File.Exists(filePath))
+                {
+                    StreamReader reader = new StreamReader(filePath);
+                    return reader.ReadToEnd();
+                }
+                else
+                {
+                    Console.WriteLine("Filen hittades inte! Ange sök adressen utan citationstecken (\" \") ");
+                    Console.ReadKey();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ogiltig inmatning!");
+                Console.WriteLine("Vill du försöka igen? ja/nej");
+                string userChoice = Console.ReadLine();
+                if (userChoice == "nej" || userChoice == "Nej")
+                {
+                    return null;
+                }
+            }
+
+        }
+
+    }
 
 
 
